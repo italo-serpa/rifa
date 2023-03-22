@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rifa Solidária</title>
+    <link rel="icon" href="assets/dentinho.png"/>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+<body class="app">
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Rifa Solidária</h1>
+    </header>
+    <main class="conteudo">
+        <div class="numeros" data-numeros></div>
+        <div class="info">
+            <div class="info__geral">
+                <div class="info__geral--vendido"></div>
+                <div class="info__geral--arrecadado"></div>
+                <div class="info__geral--porcetagem"></div>
+                <p class="dente">&#129463</p>
+            </div>
+            <div class="info__numero escondido">
+                <form class="formulario" data-form>
+                    <div class="input-numeral">
+                        <input type="text" name="numero" class="numero-selecionado" id="numero">
+                    </div>
+                    <div class="input-container">
+                        <label class="input-label"for="nome">Nome</label>
+                        <input type="text" name="nome" class="input" id="nome" spellcheck="false">
+                    </div>
+                    <div class="input-container">
+                        <label class="input-label"for="telefone">Telefone</label>
+                        <input type="text" name="telefone" class="input" id="telefone" spellcheck="false">
+                    </div>
+                    <div class="input-container">
+                        <input type="submit" value="&#128504" class="botao" data-salvar>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
